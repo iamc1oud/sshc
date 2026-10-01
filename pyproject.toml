@@ -1,5 +1,5 @@
 [project]
-name = "google-style-py"
+name = "sshc"
 version = "0.1.0"
 description = "Easily list, connect, and delete ssh config hosts."
 readme = "README.md"
