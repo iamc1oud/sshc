@@ -4,10 +4,25 @@ List, connect, add, edit, and delete `~/.ssh/config` hosts from one CLI.
 
 ## Install
 
+One-liner (installs `uv` if needed, then `sshc`):
+
 ```bash
+curl -LsSf https://raw.githubusercontent.com/iamc1oud/sshc/main/install.sh | sh
+```
+
+To install a specific branch, tag, or commit:
+
+```bash
+curl -LsSf https://raw.githubusercontent.com/iamc1oud/sshc/main/install.sh | sh -s -- <ref>
+```
+
+Manual alternatives:
+
+```bash
+uv tool install "git+https://github.com/iamc1oud/sshc.git"
+# or from a local checkout:
 uv sync
 uv run sshc list
-# or: pipx install -e .
 ```
 
 ## Usage
